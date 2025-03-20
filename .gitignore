@@ -1,0 +1,68 @@
+# Binarios compilados y dependencias
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/bin/
+/vendor/
+
+# Archivo de configuración de GoLand y otras IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Archivos de entorno y configuración local
+*.env
+.env*
+!.env.example
+*.yaml
+!configs/*.example.yaml
+*.yml
+!configs/*.example.yml
+*.local.*
+
+# Archivos de registro
+*.log
+logs/
+
+# Archivos temporales
+tmp/
+temp/
+
+# Archivos de base de datos sqlite (si los usas para desarrollo)
+*.db
+*.sqlite
+
+# Archivos de caché
+.cache/
+
+# Archivos de cobertura de pruebas
+coverage.*
+*.coverprofile
+
+# Directorios de salida de documentación
+/docs/output/
+
+# Archivos específicos del proyecto (ajustar según sea necesario)
+/config.yaml
+/app.yaml
+/config.json
+/app.json
+
+# Directorios específicos para imágenes Docker
+.docker/data/
+
+# Archivos de bloqueo para desarrollo local
+.pid
+.lock
+
+# Directorios de dependencias locales para evitar duplicaciones
+__debug_bin
+
+# Archivos de caché del sistema operativo
+Thumbs.db
