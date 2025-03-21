@@ -12,7 +12,7 @@ type URLRepository interface {
 
 	GetByShortURL(ctx context.Context, shortURL string) (*models.URL,error)
 
-	GetByUserID(ctx context.Context, userID uuid.UUID) ([]*models.URL, error)
+	GetByUserID(ctx context.Context, userID uuid.UUID) ([]models.URL, error)
 
 	Delete(ctx context.Context, id uuid.UUID) error
 }
